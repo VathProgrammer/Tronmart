@@ -124,7 +124,7 @@ $(document).ready(() =>{
        
     ];
     const star = '<i class="fa-regular fa-star"></i>';
-    const path = "/Product/";
+    const path = "Product/";
     proInfo.map((im) =>{
       $('#Image_grow').append(` 
        <div class=" h-96 mb-32">
