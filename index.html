@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tronmart</title>
+    <link rel="icon" href="/image/Logo.jpg" />
+    <link rel="stylesheet" href="index.css" type="text/tailwindcss" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+        @layer components {
+          .container {
+            @apply w-[80%];
+          }
+          .container2 {
+            @apply w-[90%];
+          }
+          h1 {
+            @apply text-white text-lg font-semibold;
+          }
+          p {
+            @apply text-white;
+          }
+          h2 {
+            @apply text-white;
+          }
+          a {
+            @apply no-underline text-[#0769DB] text-lg;
+          }
+          li {
+            @apply list-none;
+          }
+        }
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div class="bg-[#0769DA] w-full h-[5vh] hidden lg:block">
+      <div class="lg:container container2 w-full mx-auto py-1">
+        <div class="flex justify-between items-center">
+          <p>
+            24/7 Customer service <span class="font-bold">1-800-234-5678</span>
+          </p>
+          <div class="flex">
+            <li>
+              <a href="" class="text-white">Shopping & return</a>
+            </li>
+            <li class="px-10">
+              <a href="" class="text-white">Track order</a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-[#0573F0] w-full h-[10vh]">
+      <div class="lg:container container2 mx-auto">
+        <div class="flex h-full w-full justify-between items-center py-3">
+          <div class="flex items-center">
+            <button id="Bar">
+              <i class="fa-solid fa-bars text-white block lg:hidden"></i>
+            </button>
+            <img
+              class="ml-5 lg:ml-0"
+              src="/image/electronic-store-logo.svg"
+              alt=""
+            />
+          </div>
+          <div class="flex">
+            <i
+              class="fa-solid fa-bag-shopping block lg:hidden text-white text-xl"
+            ></i>
+            <input
+              class="hidden lg:block"
+              type="text"
+              placeholder="Search product..."
+            />
+            <button
+              class="bg-[#27323F] px-5 mx-2 hover:bg-[#0573F0] hidden lg:block"
+            >
+              <i class="fa-solid fa-magnifying-glass text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-[#0573F0] w-full h-[9vh] border-t hidden lg:block border-gray-500"
+    >
+      <div class="lg:container container2 mx-auto h-auto">
+        <div class="flex h-full justify-between items-center grow py-3">
+          <h1>
+            All product
+            <i
+              class="fa-solid fa-greater-than fa-rotate-90 text-white text-xs ml-3"
+            ></i>
+          </h1>
+          <h1>Home appliances</h1>
+          <h1>Audio & video</h1>
+          <h1>Refrigerator</h1>
+          <h1>New arrivals</h1>
+          <h1>Today's deal</h1>
+          <h1>Gift Card</h1>
+          <i class="fa-solid fa-bag-shopping text-white"></i>
+          <p>Log in</p>
+        </div>
+      </div>
+    </div>
+      <div class="w-full h-full bg-[#F9F9F9]">
+            <div class="lg:container container2 mx-auto">
+              <div class="flex items-center h-full">
+                <div class="block lg:hidden  shadow-sm h-auto" id="MenuCol">
+                  <li class="leading-10">
+                    <a class="text-sm" href="">All product</a>
+                  </li>
+                  <li class="leading-10">
+                    <a class="text-sm" href="">Home appliances</a>
+                  </li>
+                  <li class="leading-10">
+                    <a class="text-sm" href="">Audio & video</a>
+                  </li>
+                  <li class="leading-10">
+                    <a class="text-sm" href="">Refrigerator</a>
+                  </li>
+                  <li class="leading-10">
+                    <a class="text-sm" href="">New arrivals</a>
+                  </li>
+                  <li class="leading-10">
+                    <a class="text-sm" href="">Today's deal</a>
+                  </li>
+                  <li class="leading-10">
+                    <a class="text-sm" href="">Gift Card</a>
+                  </li>
+            </div>
+              </div>
+             
+            </div>
+      </div>
+       
+    <div class="w-full lg:h-[20vh] bg-[#FFFFFF] shadow-sm" id="content_menu">
+      <div class="lg:container container2 h-full mx-auto">
+        <div class="sm:flex justify-between top-0 items-center h-auto py-10 lg:py-0">
+          <div class="">
+            <h1 class="font-bold lg:text-6xl text-3xl text-black">
+              New arrivals
+            </h1>
+          </div>
+          <div
+            class="hidden sm:block border-r mx-10 h-24 border-gray-200 w-1"
+          ></div>
+          <div class="sm:w-80 w-full mt-2">
+            <p class="text-gray-600 text-md">
+              Saepe doloribus deserunt in. At beatae neque pariatur harum vel.
+              Possimus fugiat aut nemo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full h-auto shadow-md bg-[#F7FBFC]">
+      <div class="h-[20%]">
+        <div class="lg:container container2 mx-auto h-full">
+          <div class="sm:flex block justify-between items-center py-10 h-full">
+            <img class="lg:w-full md:w-80 w-full sm:mr-2" src="/image/banner1.jpg" alt="" />
+            <img class="lg:w-full md:w-80 w-full sm:mt-0 mt-2" src="/image/benner2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="lg:container container2 mx-auto bg-white shadow-lg px-5 py-10">
+        <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-3 grid-cols-2 gap-5 grow" id="Image_grow"></div>
+      </div>
+      <div class="lg:container container2 mx-auto py-10">
+        <img src="image/footer_benner.jpg" alt="" />
+      </div>
+    </div>
+    <div class="w-full h-auto">
+      <div class="lg:container container2 mx-auto h-full">
+        <div class="sm:flex grid sm:justify-between sm:items-start sm:mt-20 gap-20 justify-center items-center w-full py-8 h-full">
+          <img
+            class="items-start"
+            src="./image/electronic-store-logo-mono.svg"
+            alt=""
+          />
+          <div class="">
+            <h1 class="font-bold text-black text-2xl text-center">Shop</h1>
+            <div class="mt-10" id="footer_menu">
+              <li class="text-center">
+                <a >Hot deals</a>
+              </li>
+              <li class="text-center">
+                <a >Catagories</a>
+              </li>
+              <li class="text-center">
+                <a  href="">Brands</a>
+              </li>
+              <li class="text-center">
+                <a >Rebates</a>
+              </li>
+              <li class="text-center">
+                <a >Weekly deals</a>
+              </li>
+            </div>
+          </div>
+          <div class="">
+            <h1 class="font-bold text-black text-2xl text-center">Need help?</h1>
+            <div class="mt-10">
+              <li  class="text-center">
+                <a href="">Hot deals</a>
+              </li>
+              <li  class="text-center">
+                <a href="">Catagories</a>
+              </li>
+              <li  class="text-center">
+                <a href="">Brands</a>
+              </li>
+              <li  class="text-center">
+                <a href="">Rebates</a>
+              </li>
+              <li  class="text-center">
+                <a href="">Weekly deals</a>
+              </li>
+            </div>
+          </div>
+          <div class="">
+            <h1 class="font-bold text-black text-2xl text-center">Contact</h1>
+            <div class="mt-10">
+              <li  class="text-center">
+                <a href="">Hot deals</a>
+              </li>
+              <li  class="text-center">
+                <a href="">Catagories</a>
+              </li>
+              <li  class="text-center">
+                <a href="">Brands</a>
+              </li>
+              <li  class="text-center">
+                <a href="">Rebates</a>
+              </li>
+              <li  class="text-center">
+                <a href="">Weekly deals</a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full h-[12vh] bg-[#27323F] ">
+      <div class="lg:container  container2 mx-auto h-full">
+        <div class="flex justify-between items-center h-full">
+          <p class="text-gray-400 text-sm">
+            © 2023 Electronic Store. Powered by Electronic Store
+          </p>
+          <img src="/image/visa.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+
+@layer base{
+    .container{
+        @apply w-[80%]
+    }
+    h1{
+        @apply text-white text-xl font-semibold
+    }
+    p{
+        @apply text-white
+    }
+    h2{
+        @apply text-white
+    }
+    a{
+        @apply no-underline
+    }
+    li{
+        @apply list-none
+    }
+}  
+@layer components{
+
+}
