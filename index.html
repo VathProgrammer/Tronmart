@@ -61,6 +61,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js" integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
   <body>
     <div class="bg-[#0769DA] w-full h-[5vh] hidden lg:block">
@@ -85,8 +86,9 @@
         <div class="flex h-full w-full justify-between items-center py-3">
           <div class="flex items-center">
             <button id="Bar">
-              <i class="fa-solid fa-bars text-white block lg:hidden"></i>
+              <i class="fa-solid fa-bars text-white lg:hidden" id="icon_menu"></i>
             </button>
+           
             <img
               class="ml-5 lg:ml-0"
               src="image/electronic-store-logo.svg"
@@ -122,21 +124,21 @@
               class="fa-solid fa-greater-than fa-rotate-90 text-white text-xs ml-3"
             ></i>
           </h1>
-          <h1>Home appliances</h1>
-          <h1>Audio & video</h1>
-          <h1>Refrigerator</h1>
-          <h1>New arrivals</h1>
-          <h1>Today's deal</h1>
+          <a class="text-white">Home appliances</a>
+          <a class="text-white">Audio & video</a>
+          <a class="text-white">Refrigerator</a>
+          <a class="text-white" href="/index.html" target="/New arrivals">New arrivals</a>
+          <a class="text-white">Today's deal</a>
           <h1>Gift Card</h1>
           <i class="fa-solid fa-bag-shopping text-white"></i>
           <p>Log in</p>
         </div>
       </div>
     </div>
-      <div class="w-full h-full bg-[#F9F9F9]">
+      <div class="w-full h-full hidden bg-[#F9F9F9]" id="MenuCol">
             <div class="lg:container container2 mx-auto">
               <div class="flex items-center h-full">
-                <div class="block lg:hidden  shadow-sm h-auto" id="MenuCol">
+                <div class="block lg:hidden  shadow-sm h-auto" >
                   <li class="leading-10">
                     <a class="text-sm" href="">All product</a>
                   </li>
@@ -150,7 +152,7 @@
                     <a class="text-sm" href="">Refrigerator</a>
                   </li>
                   <li class="leading-10">
-                    <a class="text-sm" href="">New arrivals</a>
+                    <a class="text-sm" href="/index.html" target="/New arrivals">New arrivals</a>
                   </li>
                   <li class="leading-10">
                     <a class="text-sm" href="">Today's deal</a>
@@ -176,7 +178,7 @@
             class="hidden sm:block border-r mx-10 h-24 border-gray-200 w-1"
           ></div>
           <div class="sm:w-80 w-full mt-2">
-            <p class="text-gray-600 text-md">
+            <p class="text-gray-600 text-center text-md">
               Saepe doloribus deserunt in. At beatae neque pariatur harum vel.
               Possimus fugiat aut nemo.
             </p>
@@ -232,19 +234,19 @@
             <h1 class="font-bold text-black text-2xl text-center">Need help?</h1>
             <div class="mt-10">
               <li  class="text-center">
-                <a href="">Hot deals</a>
+                <a href="contact.html" target="/Contact" id="Contact">Contact</a>
               </li>
               <li  class="text-center">
-                <a href="">Catagories</a>
+                <a href="">Order tracking</a>
               </li>
               <li  class="text-center">
-                <a href="">Brands</a>
+                <a href="">FAQs</a>
               </li>
               <li  class="text-center">
-                <a href="">Rebates</a>
+                <a href="">return policy</a>
               </li>
               <li  class="text-center">
-                <a href="">Weekly deals</a>
+                <a href="">Privacy polacy</a>
               </li>
             </div>
           </div>
